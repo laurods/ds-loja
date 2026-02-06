@@ -4,13 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [tailwindcss()],
   preview: {
-    allowedHosts: [
-      'app-loja.rbpezf.easypanel.host' // Adicione o seu domínio aqui
-    ],
-    server: {
-        allowedHosts: ['app-loja.rbpezf.easypanel.host']
-      },
-    host: '0.0.0.0',
-    port: 3000
+    allowedHosts:'app-loja.rbpezf.easypanel.host'
   }
 })
