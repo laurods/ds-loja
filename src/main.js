@@ -31,13 +31,13 @@ btnUpload.addEventListener('click', async () => {
   formData.append('tarefa', tarefa);
 
   try {
-    const response = await fetch('https://nodejs-dsruptura.rbpezf.easypanel.host', {
+    const response = await fetch('https://mariadb-api.rbpezf.easypanel.host/api/upload-csv', {
       method: 'POST',
       body: formData,
     });
 
     if (response.ok) {
-      alert("Sucesso! Inventário enviado.");
+      alert("Sucesso! Tarefa enviada.");
       inputTarefa.value = "";
       inputFile.value = "";
       labelArquivo.innerText = "Selecione o arquivo CSV";
